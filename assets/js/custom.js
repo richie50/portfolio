@@ -132,10 +132,8 @@
 		 * Contact form ajax
 		/* ---------------------------------------------- */
 
-		$('#contact-form').submit(function(e) {
-
-			e.preventDefault();
-
+		$('#contact-form').submit(function (e) {
+		    //e.preventDefault();
 			var c_name = $('#c_name').val();
 			var c_email = $('#c_email').val();
 			var c_message = $('#c_message ').val();
@@ -150,16 +148,20 @@
 			var name_input = document.getElementById('c_name');
 			var msg_input = document.getElementById('c_message');
 			if (( c_name== '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email) )) {
-				response.fadeIn(400);
+				response.fadeIn(800);
 				response.html('<i class="fa fa-warning"></i> Require information is missing.');
 				
 				email_input.style.border = "solid 1px red";
 				name_input.style.border = "solid 1px red";
 				msg_input.style.border = "solid 1px red";
+				e.preventDefault();
+
 			} else if (!(c_name == '' || c_email == '' || c_message == '') || !(!isValidEmailAddress(c_email))) {
 			    email_input.style.border = "solid 1px green";
 			    name_input.style.border = "solid 1px green";
 			    msg_input.style.border = "solid 1px green";
+			    response.fadeIn(800);
+			    response.html('<i class="fa fa-check" id="sent"></i> Email Sent.Thank you.')
 			}
             
 			else {
@@ -174,8 +176,8 @@
 											response.html(ret.message).fadeIn(500);
 							}
 						});
-				}           
-            	return false;
+			}
+			return true;
 			});
 
 	});
