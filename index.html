@@ -13,6 +13,7 @@
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
@@ -289,7 +290,7 @@
 
 				<div class="col-sm-6 col-sm-offset-3">
 
-					<form id="contact-form" role="form">
+					<form id="contact-form" role="form" action="../MyWeb/assets/php/contact.php" method="GET">
 						<div class="ajax-hidden">
 							<div class="form-group wow fadeInUp">
 								<label class="sr-only" for="c_name">Name</label>
@@ -305,7 +306,7 @@
 								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
 							</div>
 
-							<button type="submit" class="btn btn-lg btn-block" data-wow-delay=".3s">Send Message</button>
+							<input type="submit" class="btn btn-lg btn-block" data-wow-delay=".3s">
 						</div>
 						<div class="ajax-response"></div>
 					</form>
