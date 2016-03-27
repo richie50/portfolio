@@ -22,6 +22,7 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
 		$res['message'] = 'Form Submission Successful';
         $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
         $extra = 'index.php';
+        echo $uri."/".$extra; 
         header("Location: http://$host$uri/$extra");
         //header("Location: http://$host//");
         //exit;
