@@ -25,13 +25,13 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
         //$extra = 'index.php';
         //echo $uri."/".$extra; 
         //header("Location: http://$host$uri/$extra");
-        header("Location: https://$host");
+        header("Location: https://www.google.ca");
         //exit;
     }
 	else{
 		$res['message'] = 'Failed to send mail. Please mail me to you@example.com\n';
         
-        	header("Location: https://$host");
+        	header("Location: https://www.google.ca");
 	}
 	echo json_encode($res);
 ?>
