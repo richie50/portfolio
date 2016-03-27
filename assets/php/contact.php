@@ -1,5 +1,5 @@
 <?php
-//$host  = $_SERVER['HTTP_HOST'];
+$host  = "https://richmondfrimpong.herokuapp.com/"
 $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: Your name <info@address.com>' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -24,13 +24,13 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
         //$extra = 'index.php';
         //echo $uri."/".$extra; 
         //header("Location: http://$host$uri/$extra");
-        //header("Location: http://$host//");
+        header("Location: http://$host");
         //exit;
     }
 	else{
 		$res['message'] = 'Failed to send mail. Please mail me to you@example.com\n';
         echo json_encode($res);
-        header("Location: http://$host//");
+        header("Location: http://$host");
 	}
 	
 ?>
