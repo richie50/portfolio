@@ -66,6 +66,10 @@ a:hover {
 		text-transform: uppercase;
 		color: #444;
 }
+#sent{
+        font-size:60px; 
+        color:green;
+}
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
