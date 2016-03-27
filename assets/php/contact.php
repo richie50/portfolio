@@ -23,13 +23,13 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
         //$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
         //$extra = 'index.php';
         //header("Location: http://$host$uri/$extra");
-        header("Location: http://$host//MyWeb");
+        header("Location: http://$host//");
         //exit;
     }
 	else{
 		$res['message'] = 'Failed to send mail. Please mail me to you@example.com\n';
         echo json_encode($res);
-        header("Location: http://$host//MyWeb");
+        header("Location: http://$host//");
 	}
 	
 ?>
