@@ -28,10 +28,10 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
 		$res['sendstatus'] = 'done';
 		//Edit your message here
 		$res['message'] = 'Form Submission Successful';
-        //$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-        //$extra = 'index.php';
-        //echo $uri."/".$extra; 
-        //header("Location: http://$host$uri/$extra");
+        	//$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+        	//$extra = 'index.php';
+		 //echo $uri."/".$extra; 
+        	//header("Location: http://$host$uri/$extra");
 		 header("Location: https://richmondfrimpong.herokuapp.com/");
         //exit;
     }
@@ -40,5 +40,4 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
         	header("Location: https://richmondfrimpong.herokuapp.com/");
 	}
 	echo json_encode($res);
-}
 ?>
