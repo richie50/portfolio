@@ -32,12 +32,12 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
         	//$extra = 'index.php';
 		 //echo $uri."/".$extra; 
         	//header("Location: http://$host$uri/$extra");
-		 header("Location: https://richmondfrimpong.herokuapp.com/");
+		// header("Location: https://richmondfrimpong.herokuapp.com/");
         //exit;
     }
 	else{
 		$res['message'] = 'Failed to send mail. Please mail me to you@example.com\n';
-        	header("Location: https://richmondfrimpong.herokuapp.com/");
+        	//header("Location: https://richmondfrimpong.herokuapp.com/");
 	}
 	echo json_encode($res);
 ?>
