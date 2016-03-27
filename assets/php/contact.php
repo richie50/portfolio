@@ -1,5 +1,5 @@
 <?php
-$host  = $_SERVER['HTTP_HOST'];
+//$host  = $_SERVER['HTTP_HOST'];
 $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: Your name <info@address.com>' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -20,10 +20,10 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
 		$res['sendstatus'] = 'done';
 		//Edit your message here
 		$res['message'] = 'Form Submission Successful';
-        //$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-        //$extra = 'index.php';
-        //header("Location: http://$host$uri/$extra");
-        header("Location: http://$host//");
+        $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+        $extra = 'index.php';
+        header("Location: http://$host$uri/$extra");
+        //header("Location: http://$host//");
         //exit;
     }
 	else{
