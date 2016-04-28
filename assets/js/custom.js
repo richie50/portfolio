@@ -8,7 +8,7 @@
 		$('#status').fadeOut();
 		$('#preloader').delay(300).fadeOut('slow');
 	});
-
+	
 	$(document).ready(function() {
 
 		/* ---------------------------------------------- /*
@@ -181,5 +181,4 @@
 			});
 
 	});
-
 })(jQuery);

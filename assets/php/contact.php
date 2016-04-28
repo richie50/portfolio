@@ -32,8 +32,8 @@ if($_GET['c_name'] || $_GET['c_email'] || $_GET['c_message']){
         //exit;
     }
 	else{
-		$res['message'] = 'Failed to send mail. Please mail at richee305@yahoo.com\n';
-		header('Refresh: 10; URL=https://richmondfrimpong.herokuapp.com/');
+		$res['message'] = 'Failed to send mail. Please mail me at richee305@yahoo.com\n';
+		header('Refresh: 30; URL=https://richmondfrimpong.herokuapp.com/');
         	//header("Location: https://richmondfrimpong.herokuapp.com/");
 	}
 	echo json_encode($res);

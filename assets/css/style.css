@@ -31,6 +31,15 @@ a:hover {
 /*-------------------------------------------------
     *Added
 /*-------------------------------------------------*/
+#my_image{
+	border: 1px solid #a1a1a1;
+	margin-left: 10px;
+	border-radius: 200px;
+    width: 200px;
+    height: 250px;
+    background-position: right;
+	overflow: hidden;
+}
 #font_hello{
        color: #800080; 
        font-family: "Great Vibes", cursive; 
